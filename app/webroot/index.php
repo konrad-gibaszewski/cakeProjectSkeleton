@@ -76,6 +76,9 @@ if (!defined('WEBROOT_DIR')) {
 if (!defined('WWW_ROOT')) {
 	define('WWW_ROOT', dirname(__FILE__) . DS);
 }
+if (!defined('CAKE_CORE_INCLUDE_PATH')) {
+	define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'cakephp' . DS . 'lib');
+}
 
 // for built-in server
 if (php_sapi_name() == 'cli-server') {
