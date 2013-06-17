@@ -1,8 +1,8 @@
 # Git | Ignore files specified below
 
 # Git auto pull
-/repoData/config/config.ini
-/repoData/log/git-auto-pulls.log
+/app/webroot/repoData/config/config.ini
+/app/webroot/repoData/log/git-auto-pulls.log
 /atlassian-ide-plugin.xml
 
 # CakePHP Application specific
