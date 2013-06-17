@@ -1,3 +1,6 @@
 [submodule "cakephp"]
 	path = cakephp
 	url = https://github.com/cakephp/cakephp.git
+[submodule "app/Vendor/PHPTAL"]
+	path = app/Vendor/PHPTAL
+	url = https://github.com/pornel/PHPTAL.git
