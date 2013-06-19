@@ -1,13 +1,6 @@
 #!/bin/bash
 
 # Simple bash script to copy default file into it's target positions.
-#
-# Licensed under The MIT License
-# Redistributions of files must retain the above copyright notice.
-#
-# @toDo         https://github.com/syncube/cakeProjectSkeleton/issues
-# @copyright    Copyright (c) 2013, Konrad Gibaszewski
-# @license      http://www.opensource.org/licenses/mit-license.php The MIT License
 
 # Files to be copied from defaults
 #
@@ -27,21 +20,33 @@
 function copyFile {
 
     cp -pvi $1 $2
-    read -p "Would you like to edit $2 (y/n [n])?"
+    read -p "Would you like to edit $2 (y/n [n])? "
     ([ "$REPLY" == "y" ] || [ "$REPLY" == "Y" ]) && nano $2
+
+}
+
+# showMessage
+#
+# show message to the user. Accepts up to three parameters:
+# - first - title, comes in bold magenta, 
+# - second - message, comes in standard text color,
+# - third - status, comes in bold green.
+#
+function showMessage {
+
+    echo -e "\n\033[1;36m $1\033[0m $2\033[1;32m $3\033[0m";
 
 }
 
 
 # Init git submodules
-echo -e "\n\033[1;36m Git submodules\033[0m intialising...";
+showMessage "Git submodules" "intialising..."
 git submodule init
 git submodule update
-echo -e "\n\033[1;36m Git submodules\033[0m intialising...\033[1;32m OK\033[0m";
-
+showMessage "Git submodules" "intialising..." "OK"
 
 # Init app (copy defaults to its target positions)
-echo -e "\n\033[1;36m Application config files\033[0m intialising...";
+showMessage "Application config files" "intialising..."
 cd app/
 copyFile .htaccess.default .htaccess
 cd Config/
@@ -51,16 +56,16 @@ copyFile email.default.php email.php
 cd ../webroot/
 copyFile .htaccess.default .htaccess
 copyFile robots.default.txt robots.txt
-echo -e "\n\033[1;36m Application config files\033[0m intialising...\033[1;32m OK\033[0m";
+showMessage "Application config files" "intialising..." "OK"
 
 # Init git auto pull
-echo -e "\n\033[1;36m Git auto pull config file\033[0m intialising...";
+showMessage "Git auto pull config file" "intialising..."
 cd repoData/config/
 copyFile config.ini.default config.ini
-echo -e "\n\033[1;36m Git auto pull config file\033[0m intialising...\033[1;32m OK\033[0m";
+showMessage "Git auto pull config file" "intialising..." "OK"
 
 # Exit msg
-echo -e "\n\033[1;32m Success\033[0m Project initialisation finished."
+showMessage "Success" "Project initialisation finished."
 echo -e "\033[1;35m Edit\033[0m You should edit files specified below:\n
          > app/.htaccess.default\r
          > app/Config/core.default.php\r
