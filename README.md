@@ -2,6 +2,8 @@
 
 **CakePHP Project Skeleton** Introductory project description follows here.
 
+To initialise default config files use [initProject.sh](https://github.com/syncube/cakeProjectSkeleton/blob/master/initProject.sh) Bash script.
+
 ## Repository specific
 * Live server (*\<ServerName\>*, branch: production): *<http://www.\<projectLocation\>>*
 \- [auto pull](http://www.\<projectLocation\>/git-pull.php)
