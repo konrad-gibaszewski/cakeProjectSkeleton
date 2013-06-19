@@ -1,9 +1,10 @@
 # Git | Ignore files specified below
 
+.htpasswd
+
 # Git auto pull
 /app/webroot/repoData/config/config.ini
 /app/webroot/repoData/log/git-auto-pulls.log
-/atlassian-ide-plugin.xml
 
 # CakePHP Application specific
 app/.htaccess
@@ -26,6 +27,9 @@ app/webroot/.htaccess
 !/app/tmp/sessions/empty
 /app/tmp/tests/*
 !/app/tmp/tests/empty
+
+# Attlassian crap
+/atlassian-ide-plugin.xml
 
 # SVN crap
 .svn/
