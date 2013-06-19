@@ -1,6 +1,13 @@
 #!/bin/bash
 
 # Simple bash script to copy default file into it's target positions.
+#
+# Licensed under The MIT License
+# Redistributions of files must retain the above copyright notice.
+#
+# @toDo         https://github.com/syncube/cakeProjectSkeleton/issues
+# @copyright    Copyright (c) 2013, Konrad Gibaszewski
+# @license      http://www.opensource.org/licenses/mit-license.php The MIT License
 
 # Files to be copied from defaults
 #
