@@ -7,8 +7,9 @@
 /app/webroot/repoData/log/git-auto-pulls.log
 
 # CakePHP Application specific
-app/.htaccess
-app/webroot/.htaccess
+/app/.htaccess
+/app/webroot/.htaccess
+/app/webroot/robots.txt
 /app/Config/core.php
 /app/Config/database.php
 /app/Config/email.php
