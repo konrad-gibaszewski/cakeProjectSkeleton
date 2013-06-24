@@ -81,3 +81,10 @@ echo -e "\033[1;35m Edit\033[0m You should edit files specified below:\n
          > app/webroot/.htaccess\r
          > app/webroot/robots.txt\r
          > app/webroot/repoData/config/config.ini\n";
+
+echo -e "\033[1;35m Configuration\033[0m You should check files specified below\r
+               and synchronise listed options for your
+               live and testing environments:\n
+         > app/Config/core.php\r
+           > Configure::write('Security.salt', '');\r
+           > Configure::write('Security.cipherSeed', '');\n";
