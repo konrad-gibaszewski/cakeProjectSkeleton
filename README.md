@@ -6,13 +6,13 @@ To initialise default config files use [initProject.sh](https://github.com/syncu
 
 ## Repository specific
 * Live server (*\<ServerName\>*, branch: production): *<http://www.\<projectLocation\>>*
-\- [auto pull](http://www.\<projectLocation\>/git-pull.php)
+\- [auto pull](http://www.\<projectLocation\>/repoData/git-pull.php)
 \- [log](http://www.\<projectLocation\>/repoData/log/git-auto-pulls.log)
 * Preview server (*\<ServerName\>*, branch: production): <http://io.\<projectLocation\>>
-\- [auto pull](http://io.\<projectLocation\>/git-pull.php)
+\- [auto pull](http://io.\<projectLocation\>/repoData/git-pull.php)
 \- [log](http://io.\<projectLocation\>/repoData/log/git-auto-pulls.log)
 * Development server (*\<ServerName\>*, branch: master, auto pull): <http://dev.\<projectLocation\>>
-\- [auto pull](http://dev.\<projectLocation\>/git-pull.php)
+\- [auto pull](http://dev.\<projectLocation\>/repoData/git-pull.php)
 \- [log](http://dev.\<projectLocation\>/repoData/log/git-auto-pulls.log)
 * Project's Wiki: <https://github.com/\<gitHubAccountName\>/\<projectName\>/wiki>
 
