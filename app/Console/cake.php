@@ -19,7 +19,10 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 $ds = DIRECTORY_SEPARATOR;
-$dispatcher = 'Cake' . $ds . 'Console' . $ds . 'ShellDispatcher.php';
+//$dispatcher = 'Cake' . $ds . 'Console' . $ds . 'ShellDispatcher.php';
+
+// Find CakePHP in /cakephp
+$dispatcher = dirname(dirname(__DIR__)) . $ds . 'cakephp' . $ds . 'lib' . $ds . 'Cake' . $ds . 'Console' . $ds . 'ShellDispatcher.php';
 
 if (function_exists('ini_set')) {
 	$root = dirname(dirname(dirname(__FILE__)));
