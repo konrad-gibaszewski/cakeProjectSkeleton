@@ -7,3 +7,6 @@
 [submodule "app/Lib/View"]
 	path = app/Lib/View
 	url = https://github.com/syncube/cakephp2_phptal.git
+[submodule "app/webroot/repoData"]
+	path = app/webroot/repoData
+	url = https://github.com/syncube/gitHub-autoPull-PHP.git
