@@ -4,3 +4,6 @@
 [submodule "app/Vendor/PHPTAL"]
 	path = app/Vendor/PHPTAL
 	url = https://github.com/pornel/PHPTAL.git
+[submodule "app/Lib/View"]
+	path = app/Lib/View
+	url = https://github.com/syncube/cakephp2_phptal.git
