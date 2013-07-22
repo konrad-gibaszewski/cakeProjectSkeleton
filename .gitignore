@@ -2,10 +2,6 @@
 
 .htpasswd
 
-# Git auto pull
-/app/webroot/repoData/config/config.ini
-/app/webroot/repoData/log/git-auto-pulls.log
-
 # CakePHP Application specific
 /app/.htaccess
 /app/webroot/.htaccess
