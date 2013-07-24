@@ -68,7 +68,7 @@ showMessage "Application config files" "intialising..." "OK"
 # Init git auto pull
 showMessage "Git auto pull config file" "intialising..."
 cd repoData/config/
-copyFile config.ini.default config.ini
+copyFile config.default.ini config.ini
 showMessage "Git auto pull config file" "intialising..." "OK"
 
 # Exit msg
