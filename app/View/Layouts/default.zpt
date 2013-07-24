@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Title</title>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="description" content=""/>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/#"/>
+</head>
+<body>
+<span tal:replace="structure content_for_layout" />
+<script type="text/javascript" src="/js/#"></script>
+</body>
+</html>
